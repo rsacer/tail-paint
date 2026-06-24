@@ -1,0 +1,28 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/styles">
+        <file alias="adwaita-light.qss">styles/adwaita-light.qss</file>
+        <file alias="adwaita-dark.qss">styles/adwaita-dark.qss</file>
+    </qresource>
+    <qresource prefix="/app">
+        <file alias="paint.png">packaging/gnome-paint.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file alias="pencil.svg">icons/pencil.svg</file>
+        <file alias="eraser.svg">icons/eraser.svg</file>
+        <file alias="line.svg">icons/line.svg</file>
+        <file alias="rectangle.svg">icons/rectangle.svg</file>
+        <file alias="ellipse.svg">icons/ellipse.svg</file>
+        <file alias="fill.svg">icons/fill.svg</file>
+        <file alias="new.svg">icons/new.svg</file>
+        <file alias="open.svg">icons/open.svg</file>
+        <file alias="save.svg">icons/save.svg</file>
+        <file alias="undo.svg">icons/undo.svg</file>
+        <file alias="redo.svg">icons/redo.svg</file>
+        <file alias="menu.svg">icons/menu.svg</file>
+        <file alias="clear.svg">icons/clear.svg</file>
+        <file alias="resize.svg">icons/resize.svg</file>
+        <file alias="image.svg">icons/image.svg</file>
+        <file alias="select.svg">icons/select.svg</file>
+    </qresource>
+</RCC>

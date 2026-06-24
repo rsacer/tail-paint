@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Taiul Paint
+Comment=Editor de pintura com estética GNOME
+Exec=gnome-paint
+Icon=gnome-paint
+Categories=Graphics;2DGraphics;RasterGraphics;
+Terminal=false
+StartupWMClass=gnome-paint
+StartupNotify=true

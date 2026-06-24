@@ -1,0 +1,219 @@
+/* Tema Adwaita claro — imita o visual do GNOME */
+
+QMainWindow,
+QWidget {
+    background-color: #fafafa;
+    color: #2e3436;
+    font-family: "Cantarell", "Inter", "Noto Sans", sans-serif;
+    font-size: 14px;
+}
+
+/* ---- Header bar ---- */
+#headerToolBar {
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 0px;
+    spacing: 0px;
+}
+
+#headerBar {
+    background-color: #ffffff;
+}
+
+#headerTitle {
+    font-weight: 700;
+    color: #2e3436;
+    font-size: 14px;
+}
+
+#headerSep,
+#panelSep {
+    color: #e0e0e0;
+    background-color: #e0e0e0;
+    max-width: 1px;
+    max-height: 24px;
+    margin: 0px 4px;
+}
+
+#panelSep {
+    max-width: 36px;
+    max-height: 1px;
+    margin: 6px 0px;
+}
+
+/* ---- Botões planos da header bar ---- */
+#flatButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+#flatButton:hover {
+    background-color: #ededed;
+}
+
+#flatButton:pressed {
+    background-color: #e0e0e0;
+}
+
+#flatButton:disabled {
+    color: #b0b0b0;
+}
+
+/* ---- Painel lateral de ferramentas ---- */
+#sideToolBar {
+    background-color: #f2f2f2;
+    border: none;
+    border-right: 1px solid #d4d4d4;
+}
+
+#toolPanel {
+    background-color: #f2f2f2;
+}
+
+#toolButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #2e3436;
+    font-weight: 600;
+}
+
+#toolButton:hover {
+    background-color: #e6e6e6;
+}
+
+#toolButton:checked {
+    background-color: #e1ecfa;
+    border: 1px solid #3584e4;
+    color: #1c71d8;
+}
+
+#colorButton {
+    background-color: #ffffff;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+}
+
+#colorButton:hover {
+    border: 1px solid #3584e4;
+}
+
+#panelLabel {
+    color: #6e6e6e;
+    font-size: 11px;
+}
+
+/* ---- SpinBox ---- */
+#widthSpin {
+    background-color: #ffffff;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    padding: 2px;
+    selection-background-color: #3584e4;
+}
+
+#widthSpin:focus {
+    border: 1px solid #3584e4;
+}
+
+/* ---- Área do canvas ---- */
+#canvasArea {
+    background-color: #d9d9d9;
+    border: none;
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 12px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical {
+    background: #c0c0c0;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #a8a8a8;
+}
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 12px;
+    margin: 2px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #c0c0c0;
+    border-radius: 5px;
+    min-width: 30px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #a8a8a8;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line {
+    width: 0px;
+    height: 0px;
+}
+
+/* ---- Menus ---- */
+QMenu {
+    background-color: #ffffff;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+QMenu::item {
+    padding: 8px 24px 8px 16px;
+    border-radius: 6px;
+}
+
+QMenu::item:selected {
+    background-color: #3584e4;
+    color: #ffffff;
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 4px 8px;
+}
+
+/* ---- Diálogos / botões padrão ---- */
+QPushButton {
+    background-color: #ffffff;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    padding: 6px 16px;
+    color: #2e3436;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0;
+}
+
+QPushButton:default {
+    background-color: #3584e4;
+    color: #ffffff;
+    border: 1px solid #1c71d8;
+}
+
+QPushButton:default:hover {
+    background-color: #3b8ae8;
+}
+
+QToolTip {
+    background-color: #2e3436;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 8px;
+}

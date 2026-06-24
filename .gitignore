@@ -1,0 +1,14 @@
+# Build
+build/
+*.o
+*.obj
+
+# AppImage gerado
+*.AppImage
+*.AppDir/
+
+# Editores / SO
+.vscode/
+.idea/
+*.swp
+.DS_Store

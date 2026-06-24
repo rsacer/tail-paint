@@ -1,0 +1,13 @@
+#!/bin/bash
+# AppRun wrapper: configura os caminhos das bibliotecas e plugins do Qt
+# embutidos no AppImage antes de iniciar o aplicativo.
+
+# Diretório raiz do AppImage montado (onde este script vive).
+HERE="$(dirname "$(readlink -f "${0}")")"
+
+export LD_LIBRARY_PATH="${HERE}/usr/lib:${LD_LIBRARY_PATH}"
+export QT_PLUGIN_PATH="${HERE}/usr/plugins"
+export QT_QPA_PLATFORM_PLUGIN_PATH="${HERE}/usr/plugins/platforms"
+export XDG_DATA_DIRS="${HERE}/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+
+exec "${HERE}/usr/bin/gnome-paint" "$@"

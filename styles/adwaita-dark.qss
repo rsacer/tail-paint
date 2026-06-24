@@ -1,0 +1,373 @@
+/* Estética GNOME/Adwaita (escuro) com layout estilo Paint do Windows 11 */
+
+QMainWindow,
+QWidget {
+    background-color: #242424;
+    color: #ffffff;
+    font-family: "Cantarell", "Inter", "Noto Sans", sans-serif;
+    font-size: 13px;
+}
+
+/* Rótulos sempre transparentes (evita o "quadrado escuro" atrás do texto) */
+QLabel {
+    background: transparent;
+}
+
+/* ---- Barra única (estilo W11, header único) ---- */
+#ribbonToolBar {
+    background-color: #303030;
+    border: none;
+    border-bottom: 1px solid #1b1b1b;
+    padding: 0px;
+    spacing: 0px;
+}
+
+#ribbon {
+    background-color: #303030;
+}
+
+#titleLabel {
+    background: transparent;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+#groupLabel {
+    background: transparent;
+    color: #9a9a9a;
+    font-size: 10px;
+}
+
+#sizeLabel {
+    background: transparent;
+    color: #9a9a9a;
+    font-size: 12px;
+    padding-right: 6px;
+}
+
+/* ---- Separadores verticais entre grupos ---- */
+#ribbonSep {
+    color: #3a3a3a;
+    background-color: #3a3a3a;
+    max-width: 1px;
+    min-height: 48px;
+    margin: 4px 4px;
+}
+
+/* ---- Botões de ação (novo, abrir, salvar, undo/redo, menu) ---- */
+#actionButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+#actionButton:hover {
+    background-color: #3d3d3d;
+}
+
+#actionButton:pressed {
+    background-color: #454545;
+}
+
+#actionButton:disabled {
+    background-color: transparent;
+}
+
+#actionButton::menu-indicator {
+    image: none;
+    width: 0px;
+}
+
+/* ---- Botões de ferramenta (lápis, formas etc.) ---- */
+#toolButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+#toolButton:hover {
+    background-color: #3d3d3d;
+}
+
+#toolButton:checked {
+    background-color: #1a3a5c;
+    border: 1px solid #3584e4;
+}
+
+/* ---- Botão de cor principal ---- */
+#colorButton {
+    background-color: #1e1e1e;
+    border: 1px solid #1b1b1b;
+    border-radius: 10px;
+}
+
+#colorButton:hover {
+    border: 1px solid #3584e4;
+}
+
+/* ---- Amostras de cor (paleta rápida) ---- */
+/* O contêiner da paleta não deve ter fundo próprio. */
+#swatchHost {
+    background: transparent;
+}
+
+/* A cor já é desenhada arredondada no ícone; o botão fica só com hover. */
+#swatch {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    padding: 0px;
+}
+
+#swatch:hover {
+    background-color: #3d3d3d;
+}
+
+/* ---- SpinBox de espessura ---- */
+#widthSpin {
+    background-color: #1e1e1e;
+    border: 1px solid #1b1b1b;
+    border-radius: 8px;
+    padding: 4px 6px;
+    color: #ffffff;
+    selection-background-color: #3584e4;
+}
+
+#widthSpin:focus {
+    border: 1px solid #3584e4;
+}
+
+#widthSpin::up-button,
+#widthSpin::down-button {
+    width: 16px;
+    border: none;
+    background: transparent;
+}
+
+/* ---- Área do canvas ---- */
+#canvasArea {
+    background-color: #1a1a1a;
+    border: none;
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 12px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical {
+    background: #4a4a4a;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #5e5e5e;
+}
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 12px;
+    margin: 2px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #4a4a4a;
+    border-radius: 5px;
+    min-width: 30px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #5e5e5e;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line {
+    width: 0px;
+    height: 0px;
+}
+
+/* ---- Menus ---- */
+QMenu {
+    background-color: #303030;
+    border: 1px solid #1b1b1b;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+QMenu::item {
+    padding: 8px 24px 8px 16px;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+QMenu::item:selected {
+    background-color: #3584e4;
+    color: #ffffff;
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #1b1b1b;
+    margin: 4px 8px;
+}
+
+/* ---- Botões padrão dos diálogos ---- */
+QPushButton {
+    background-color: #383838;
+    border: 1px solid #1b1b1b;
+    border-radius: 8px;
+    padding: 6px 16px;
+    color: #ffffff;
+}
+
+QPushButton:hover {
+    background-color: #424242;
+}
+
+QPushButton:default {
+    background-color: #3584e4;
+    color: #ffffff;
+    border: 1px solid #1c71d8;
+}
+
+QPushButton:default:hover {
+    background-color: #3b8ae8;
+}
+
+QToolTip {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    border: 1px solid #3d3d3d;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+/* ---- Abas de páginas ---- */
+#pageTabs::pane {
+    border: none;
+    background-color: #1a1a1a;
+}
+
+#pageTabs QTabBar {
+    background-color: #2a2a2a;
+}
+
+#pageTabs QTabBar::tab {
+    background-color: #2a2a2a;
+    color: #c0c0c0;
+    padding: 6px 16px;
+    border: none;
+    border-right: 1px solid #1b1b1b;
+    min-width: 80px;
+}
+
+#pageTabs QTabBar::tab:selected {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-top: 2px solid #3584e4;
+}
+
+#pageTabs QTabBar::tab:hover:!selected {
+    background-color: #333333;
+}
+
+#addTabButton {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2px 10px;
+    margin: 2px;
+    border-radius: 6px;
+}
+
+#addTabButton:hover {
+    background-color: #3d3d3d;
+}
+
+/* ---- Controle de zoom flutuante ---- */
+#zoomOverlay {
+    background-color: #303030;
+    border: 1px solid #1b1b1b;
+    border-radius: 12px;
+}
+
+#zoomOverlay QLabel {
+    background: transparent;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+#zoomEdit {
+    background-color: #1e1e1e;
+    border: 1px solid #1b1b1b;
+    border-radius: 7px;
+    padding: 3px 4px;
+    color: #ffffff;
+    font-size: 12px;
+    selection-background-color: #3584e4;
+}
+
+#zoomEdit:focus {
+    border: 1px solid #3584e4;
+}
+
+#zoomBtn {
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#zoomBtn:hover {
+    background-color: #3d3d3d;
+}
+
+#zoomSlider {
+    background: transparent;
+}
+
+#zoomSlider::groove:horizontal {
+    height: 4px;
+    background: #1b1b1b;
+    border-radius: 2px;
+}
+
+#zoomSlider::handle:horizontal {
+    background: #3584e4;
+    width: 14px;
+    height: 14px;
+    margin: -5px 0;
+    border-radius: 7px;
+}
+
+#zoomSlider::handle:horizontal:hover {
+    background: #4a90e8;
+}
+
+#zoomSlider::sub-page:horizontal {
+    background: #3584e4;
+    border-radius: 2px;
+}
+
+/* ---- SpinBox dos diálogos (ex.: redimensionar) ---- */
+QDialog QSpinBox {
+    background-color: #1e1e1e;
+    border: 1px solid #1b1b1b;
+    border-radius: 8px;
+    padding: 4px 6px;
+    color: #ffffff;
+    selection-background-color: #3584e4;
+    min-width: 90px;
+}
+
+QDialog QSpinBox:focus {
+    border: 1px solid #3584e4;
+}
